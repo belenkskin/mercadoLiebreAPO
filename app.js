@@ -6,9 +6,9 @@ const PORT = 3000;
 se inicia con npm star en la terminal
 */
 
-//app.listen(3000)
+app.listen(process.env.PORT || 3000, function(){ console.log('Servidor corriendo en el puerto 3000')});
 
-app.listen(PORT, () => { console.log('Servidor corriendo en el puerto:' + PORT) })
+/* app.listen(PORT, () => { console.log('Servidor corriendo en el puerto:' + PORT) }) */
 
 app.get('/', function (req, res) {
     //res.send('Levantando un servidor con Express');
